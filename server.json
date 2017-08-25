@@ -1,0 +1,13 @@
+{
+    "web":{
+        "rewrites":{
+            "enable":true
+        },
+        "http":{
+            "port":"9090"
+        }
+    },
+    "app":{
+        "cfengine":"lucee@5"
+    }
+}
