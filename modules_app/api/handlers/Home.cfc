@@ -1,10 +1,10 @@
 /**
 * A normal ColdBox Event Handler
 */
-component{
+component extends="handlers.BaseHandler"{
 
 	function index(event,rc,prc){
-		event.setView( "home/index" );
+
 	}
 
 }

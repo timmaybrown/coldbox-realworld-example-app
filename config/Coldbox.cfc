@@ -99,6 +99,40 @@
 			}
 		];
 
+		cbswagger = {
+		    // The route prefix to search.  Routes beginning with this prefix will be determined to be api routes
+		    "routes":["api"],
+		    //A base path prefix for your API - leave blank if all routes are configured to the root of the site
+		    "basePath":"",
+		    //The API host
+		    "host":"",
+		    // Information about your API
+		    "info":{
+		        //The contact information
+		        "contact":{
+		            "name":"",
+		            "email":""
+		        },
+		        //A title for your API
+		        "title":"",
+		        //A descritpion of your API
+		        "description":"",
+		        //A url to the License of your API
+		        "license":{
+		            "name":"",
+		            "url":""
+		        },
+		        //A terms of service URL for your API
+		        "termsOfService":"",
+		        //The version of your API
+		        "version":""
+		    },
+		    //An array of all of the request body formats your your API is configured to consume 
+		    "consumes": ["application/json","multipart/form-data","application/x-www-form-urlencoded"],
+		    //An array of all of the response body formats your API delivers
+		    "produces": ["application/json"]
+		};
+
 		/*
 		// module setting overrides
 		moduleSettings = {

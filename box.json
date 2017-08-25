@@ -1,21 +1,21 @@
 {
-    "name":"REST APP Template",
-    "version":"2.3.0",
-    "location":"https://github.com/coldbox-templates/rest/archive/v2.3.0.zip",
-    "author":"You",
-    "slug":"cbtemplate-rest",
+    "name":"Coldbox Realworld Example App",
+    "version":"0.1.0",
+    "location":"https://github.com/timmaybrown/coldbox-realworld-example-app/archive/master.zip",
+    "author":"Tim Brown (timmay.brown@gmail.com)",
+    "slug":"coldbox-realworld-example-app",
     "createPackageDirectory":false,
     "type":"mvc",
-    "homepage":"https://github.com/coldbox-templates/rest",
-    "documentation":"https://github.com/coldbox-templates/rest",
+    "homepage":"https://github.com/timmaybrown/coldbox-realworld-example-app",
+    "documentation":"https://github.com/timmaybrown/coldbox-realworld-example-app",
     "repository":{
         "type":"git",
-        "url":"https://github.com/coldbox-templates/rest"
+        "url":"https://github.com/timmaybrown/coldbox-realworld-example-app"
     },
-    "bugs":"https://github.com/coldbox-templates/rest/issues",
-    "shortDescription":"This template gives you the base for building RESTFul web services with ColdBox",
+    "bugs":"https://github.com/timmaybrown/coldbox-realworld-example-app/issues",
+    "shortDescription":"API built with Coldbox for the http://realworld.io project",
     "contributors":[
-        
+        "timmay.brown@gmail.com"
     ],
     "ignore":[
         
@@ -25,19 +25,21 @@
         "relax":"^2.2.0+00032"
     },
     "installPaths":{
-        "coldbox":"coldbox",
+        "coldbox":"coldbox\\",
         "testbox":"testbox",
-        "relax":"modules/relax",
-        "cbswagger":"modules/cbswagger",
-        "cors":"modules\\cors"
+        "relax":"modules\\relax",
+        "cbswagger":"modules\\cbswagger\\",
+        "cors":"modules\\cors\\",
+        "jwt":"modules\\jwt\\"
     },
     "dependencies":{
         "coldbox":"^4.3.0",
         "cbswagger":"^1.1.0",
-        "cors":"^1.0.0"
+        "cors":"^1.0.0",
+        "jwt":"^1.0.1"
     },
     "scripts":{
-        "postVersion":"package set location='https://github.com/coldbox-templates/rest/archive/v`package version`.zip'",
+        "postVersion":"package set location='https://github.com/timmaybrown/coldbox-realworld-example-app/archive/v`package version`.zip'",
         "postPublish":"!git push --follow-tags"
     }
 }
