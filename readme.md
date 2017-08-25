@@ -62,3 +62,11 @@ You can read more about starting and managing servers with Commandbox in the [do
 The server will now download the latest version of [Lucee](http://lucee.org/) - A light-weight dynamic scripting language for the JVM that enables the rapid development of simple to highly sophisticated web applications.
 
 
+# Code overview
+
+## Dependencies
+
+- [jwt](https://www.forgebox.io/view/jwt) - For authentication using JSON Web Tokens
+- [cors](https://www.forgebox.io//view/cors) - For handling Cross-Origin Resource Sharing (CORS)
+
+## Folders
