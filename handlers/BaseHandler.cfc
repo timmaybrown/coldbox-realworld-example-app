@@ -52,14 +52,6 @@ component extends="coldbox.system.EventHandler"{
 	this.aroundHandler_except 	= "";		
 
 	// REST Allowed HTTP Methods Ex: this.allowedMethods = {delete='#METHODS.POST#,#METHODS.DELETE#',index='#METTHOD.GET#'}
-	this.allowedMethods = {
-		"index" 	: METHODS.GET,
-		"get" 		: METHODS.GET,
-		"create" 	: METHODS.POST,
-		"list" 		: METHODS.GET,
-		"update" 	: METHODS.PUT & "," & METHODS.PATCH,
-		"delete" 	: METHODS.DELETE
-	};
 	
 	/**
 	* Around handler for all actions it inherits
@@ -104,7 +96,6 @@ component extends="coldbox.system.EventHandler"{
 		}
 		// end timer
 		prc.response.setResponseTime( getTickCount() - stime );
-
 		// If results detected, just return them, controllers requesting to return results
 		if( !isNull( actionResults ) ){
 			return actionResults;
@@ -128,7 +119,7 @@ component extends="coldbox.system.EventHandler"{
 			// Magical Response renderings
 			event.renderData(
 				type		= prc.response.getFormat(),
-				data 		= prc.response.getDataPacket(),
+				data 		= prc.response.getDataPacket().data,
 				contentType = prc.response.getContentType(),
 				statusCode 	= prc.response.getStatusCode(),
 				statusText 	= prc.response.getStatusText(),

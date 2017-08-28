@@ -46,6 +46,7 @@ component {
 		// SES Routes
 		routes = [
 			// Module Entry Point
+			{ pattern="/users/login", handler="Users", action="login"  },
 			{ pattern="/", handler="home", action="index" },
 			// Convention Route
 			{ pattern="/:handler/:action?" }
